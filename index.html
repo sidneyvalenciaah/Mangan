@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangan - Kumpulan Resep Makanan Indonesia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9dfe5; /* Warna latar belakang soft pink */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #ffffff; /* Warna latar belakang box */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .recipes {
+            margin-top: 40px;
+            display: none; /* Sembunyikan daftar resep secara default */
+        }
+        .recipe {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff; /* Warna latar belakang box */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mangan</h1>
+        <h2>Selamat Datang, mari kita memasak!</h2>
+        <form id="registerForm">
+            <input type="text" placeholder="Nama Lengkap" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <div class="container recipes" id="recipesContainer">
+        <h2>Resep Makanan Indonesia</h2>
+        
+        <div class="recipe">
+            <h3>Nasi Goreng</h3>
+			<img src="Nasi_goreng_seafood.png" alt="Nasi Goreng">
+            <p>Bahan-bahan:</p>
+            <ul>
+                <li>Nasi putih - 2 mangkok</li>
+                <li>Bawang putih - 3 siung, cincang halus</li>
+                <li>Bawang merah - 5 butir, iris tipis</li>
+                <li>Minyak goreng - 2 sendok makan</li>
+                <li>Kecap manis - 2 sendok makan</li>
+                <li>Saus sambal - 1 sendok makan</li>
+                <li>Garam - secukupnya</li>
+                <li>Telur - 2 butir</li>
+                <li>Daun bawang - 2 batang, iris halus</li>
+                <li>Mentimun - 1 buah, iris tipis</li>
+                <li>Tomat - 1 buah, iris tipis</li>
+            </ul>
+            <p>Langkah-langkah:</p>
+            <ol>
+                <li>Siapkan bahan-bahan dan alat yang diperlukan.</li>
+                <li>Panaskan minyak di wajan.</li>
+                <li>Tumis bawang putih dan bawang merah hingga harum.</li>
+                <li>Masukkan nasi dan aduk hingga merata.</li>
+                <li>Tambahkan kecap manis, saus sambal, dan garam secukupnya.</li>
+                <li>Tambahkan telur dan aduk hingga matang.</li>
+                <li>Tambahkan daun bawang, irisan mentimun, dan tomat sebagai hiasan.</li>
+                <li>Nasi goreng siap disajikan.</li>
+            </ol>
+        </div>
+
+        <div class="recipe">
+            <h3>Sate Ayam</h3>
+			<img src="sateayam.png" alt="Sate Ayam">
+            <p>Bahan-bahan:</p>
+            <ul>
+                <li>Daging ayam fillet - 500 gram, potong kotak</li>
+                <li>Bawang putih - 3 siung, cincang halus</li>
+                <li>Kecap manis - 3 sendok makan</li>
+                <li>Minyak goreng - secukupnya</li>
+                <li>Bumbu sate (bumbu kacang) - sesuai selera</li>
+            </ul>
+            <p>Langkah-langkah:</p>
+            <ol>
+                <li>Rendam daging ayam dalam kecap manis dan bawang putih cincang selama 1 jam.</li>
+                <li>Tusuk daging ayam yang telah direndam dalam tusukan sate.</li>
+                <li>Panggang sate ayam di atas bara api hingga matang sambil sesekali diolesi dengan bumbu sate.</li>
+                <li>Sajikan sate ayam dengan bumbu kacang.</li>
+            </ol>
+        </div>
+
+        <div class="recipe">
+            <h3>Pisang Goreng</h3>
+			<img src="pisgorr.png" alt="Pisang Goreng">
+            <p>Bahan-bahan:</p>
+            <ul>
+                <li>Pisang raja - 4 buah, potong-potong</li>
+                <li>Tepung terigu - 200 gram</li>
+                <li>Tepung beras - 50 gram</li>
+                <li>Gula pasir - 2 sendok makan</li>
+                <li>Garam - 1/4 sendok teh</li>
+                <li>Air - 200 ml</li>
+                <li>Minyak goreng - secukupnya</li>
+            </ul>
+            <p>Langkah-langkah:</p>
+            <ol>
+                <li>Campurkan tepung terigu, tepung beras, gula pasir, dan garam dalam sebuah mangkuk.</li>
+                <li>Tambahkan air sedikitnya sambil diaduk hingga membentuk adonan yang kental.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang.</li>
+                <li>Gulingkan potongan pisang ke dalam adonan tepung hingga seluruh bagian pisang terbalut tepung secara merata.</li>
+                <li>Goreng pisang dalam minyak panas hingga kecokelatan dan matang.</li>
+                <li>Tiriskan pisang goreng dari minyak, kemudian sajikan selagi hangat.</li>
+            </ol>
+        </div>
+
+        <div class="recipe">
+            <h3>Lontong Sayur</h3>
+			<img src="lontuong.png" alt="Lontong Sayur">
+            <p>Bahan-bahan:</p>
+            <ul>
+                <li>Lontong - 4 buah, potong-potong</li>
+                <li>Kacang panjang - 100 gram, potong-potong</li>
+                <li>Telur - 2 butir, rebus dan belah dua</li>
+                <li>Labu siam - 100 gram, potong-potong</li>
+                <li>Tauge - 100 gram</li>
+                <li>Daun melinjo - secukupnya</li>
+                <li>Daun salam - 2 lembar</li>
+                <li>Serai - 1 batang, memarkan</li>
+                <li>Santan - 200 ml</li>
+                <li>Minyak goreng - secukupnya</li>
+            </ul>
+            <p>Langkah-langkah:</p>
+            <ol>
+                <li>Rebus air hingga mendidih, kemudian masukkan daun salam, serai, dan lontong. Rebus hingga lontong matang.</li>
+                <li>Tumis bumbu halus hingga harum, tambahkan kacang panjang, labu siam, dan daun melinjo. Aduk hingga rata.</li>
+                <li>Masukkan santan, telur rebus, dan tauge. Aduk rata dan masak hingga mendidih.</li>
+                <li>Tuangkan kuah lontong sayur ke dalam mangkuk saji yang berisi lontong.</li>
+                <li>Lontong sayur siap disajikan.</li>
+            </ol>
+        </div>
+
+        <div class="recipe">
+            <h3>Sayur Sop</h3>
+			<img src="sop.png" alt="Sayur Sop">
+            <p>Bahan-bahan:</p>
+            <ul>
+                <li>Wortel - 2 buah, potong-potong</li>
+                <li>Kentang - 2 buah, potong-potong</li>
+                <li>Kacang panjang - 100 gram, potong-potong</li>
+                <li>Kol - 100 gram, potong-potong</li>
+                <li>Jagung manis - 2 tongkol, potong-potong</li>
+                <li>Ayam - 1 potong, potong-potong</li>
+                <li>Daun bawang - 2 batang, iris halus</li>
+                <li>Daun seledri - secukupnya</li>
+                <li>Daun salam - 2 lembar</li>
+                <li>Jahe - 1 ruas jari, memarkan</li>
+                <li>Garam - secukupnya</li>
+                <li>Merica - secukupnya</li>
+                <li>Minyak goreng - secukupnya</li>
+            </ul>
+            <p>Langkah-langkah:</p>
+            <ol>
+                <li>Rebus ayam dalam air hingga matang, kemudian suwir-suwir daging ayamnya.</li>
+                <li>Tumis bumbu halus hingga harum, tambahkan daun salam, jahe, dan irisan daun bawang.</li>
+                <li>Masukkan wortel, kentang, dan ayam suwir ke dalam tumisan. Aduk hingga rata.</li>
+                <li>Tuangkan air secukupnya, masukkan kacang panjang, jagung manis, dan kol. Masak hingga sayur matang.</li>
+                <li>Tambahkan garam dan merica secukupnya, aduk rata.</li>
+                <li>Sajikan sayur sop panas dengan taburan daun seledri di atasnya.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk menangani submit form register
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Menghentikan pengiriman form
+            // Lakukan validasi dan registrasi pengguna di sini
+            // Untuk keperluan contoh, saya hanya menampilkan resep setelah submit form
+            document.getElementById('registerForm').style.display = 'none'; // Sembunyikan form register
+            document.getElementById('recipesContainer').style.display = 'block'; // Tampilkan daftar resep
+        });
+    </script>
+</body>
+</html>
